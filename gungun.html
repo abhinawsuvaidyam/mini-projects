@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gun-gun</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: aqua;
+            font-size: medium;
+            text-align: center;
+            padding: 30px;
+            border: 0cap;
+            color: blueviolet;
+        }
+
+        nav {
+            float: left;
+            padding: 20px;
+            width: 30%;
+            height: 500px;
+            background-color: azure;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: right;
+            padding: 20px;
+            width: 70%;
+            background-color: bisque;
+            height: 500px;
+        }
+
+        section::after {
+            display: table;
+            clear: both;
+            content: "";
+
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            height: auto;
+        }
+
+        @media (max-width:600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>cities</header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">mumbai</a></li>
+                <li><a href="#">delhi</a></li>
+                <li><a href="#">kolkat</a></li>
+
+            </ul>
+        </nav>
+
+        <article>
+            <h4>Mumbai</h4>
+            <p>mumbai is the densely populated city on india's west coast. A financial center. it's india's largest
+                city.</p>
+            <h4>Delhi</h4>
+            <p>Delhi is capital city of india. it's on of the densaly populated city in india</p>
+            <h4>Kolkata</h4>
+            <p>Kolkata is the capital of india's west bengal state. it was india's capital under british raj </p>
+        </article>
+
+    </section>
+    <footer style="height: 50px; margin:top=20;">
+        <p>this page is about some india's most popular city</p>
+    </footer>
+
+</body>
+
+</html>

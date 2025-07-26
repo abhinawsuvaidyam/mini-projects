@@ -1,0 +1,47 @@
+.gallary {
+    border: 1px solid red;
+}
+
+.gallary img {
+    height: auto;
+    width: 100%;
+}
+
+.gallary:hover {
+    border: 3px solid gray;
+}
+
+.discription {
+    text-align: center;
+    padding: 15px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.my {
+    float: left;
+    padding: 0px 16px;
+    width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    .my {
+        width: 495%;
+        padding: 16px 0px;
+    }
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+
+}
+
+@media only screen and (max-width: 500px) {
+    .my {
+        width: 100%;
+    }
+}

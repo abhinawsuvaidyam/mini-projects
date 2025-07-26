@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">click for current Time</button>
+    <p id="demo"></p>
+    <button onclick="this.innerHTML=Date()">curent time</button><br>
+    <button onclick="home()" >click me</button>
+    <p id="demo2"></p>
+    <button onmouseover="home2()">hover over me</button>
+    <p id="demo3"></p>
+    <script>
+        function home() {
+            document.getElementById('demo2').innerHTML=Date();
+        }
+        function home2(){
+            document.getElementById('demo3').innerHTML=Date();
+        }
+    </script>
+</body>
+</html>

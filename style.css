@@ -1,0 +1,61 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(2, 42, 42);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.a {
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+.b {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    background: url('https://media.istockphoto.com/id/1439820420/photo/blue-bmw-m3.jpg?s=612x612&w=0&k=20&c=lXx_3njBp-8nMEJ5qdYOoZQQJ9GGunO7lTQXaTmV94I=');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.c {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: -100px;
+}
+
+.d {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    right: -100px;
+}
+
+.e {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    bottom: 0px;
+    left: -100px;
+}
+
+.f {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    bottom: 0px;
+    right: -100px;
+}

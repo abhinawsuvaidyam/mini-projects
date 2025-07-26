@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Checker</title>
+</head>
+<body>
+  <input type="text" id="name" placeholder="Enter a color (e.g. red, #f00, rgb(255,0,0))">
+  <button onclick="somu()">Submit</button>
+
+  <div id="name2" style="width: 20%; height: 200px; border: 2px solid black; margin-top:12px;"></div>
+
+  <script>
+    function isValidColor(color) {
+      const s = new Option().style;
+      s.color = color;
+      return s.color !== '';
+    }
+
+    function somu() {
+      const ram = document.getElementById("name");
+      const name2 = document.getElementById("name2");
+      const inputColor = ram.value.trim();
+
+      if (!isValidColor(inputColor)) {
+        alert("Invalid color value! Please enter a valid CSS color.");
+        return;
+      }
+
+      // Compare current background with input (convert both to computed style)
+      const currentBg = getComputedStyle(name2).backgroundColor;
+
+      // Use a temporary element to resolve inputColor to computed format
+      const temp = document.createElement("div");
+      temp.style.color = inputColor;
+      document.body.appendChild(temp);
+      const inputColorAsRgb = getComputedStyle(temp).color;
+      document.body.removeChild(temp);
+
+      if (inputColorAsRgb !== currentBg) {
+        // alert("Different color entered!");
+        name2.style.background = inputColor;
+        return
+      } else {
+        alert("Same color already applied!");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+
+<body>
+    <p id="text"></p>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p id="text5"></p>
+    <p id="text6"></p>
+    <p id="text7"></p>
+    <p id="text8"></p>
+    <p id="text9"></p>
+    <p id="text10"></p>
+    <p id="text11"></p>
+    <p id="text12"></p>
+    <p id="text13"></p>
+    <p id="text14"></p>
+    <p id="text15"></p>
+    <p id="text16"></p>
+    <p id="text17"></p>
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+        let best = "";
+        for (let i = 0; i < cars.length; i++) {
+            best += cars[i] + "<br>";
+        }
+        document.getElementById("text").innerHTML = best;
+        let best1 = "";
+        for (let o = 0; o < 9; o++) {
+            best1 += "this number is " + o + "<br>";
+        }
+        document.getElementById("text1").innerHTML = best1;
+        let p, len, best3;
+        for (p = 0, len = cars.length, best3 = ""; p < len; p++) {
+            best3 += cars[p] + "<br>";
+        }
+        document.getElementById("text2").innerHTML = best3;
+        let q = 2;
+        let len1 = cars.length;
+        let best2 = "";
+        for (; q < len;) {
+            best2 += cars[q] + "<br>";
+            q++;
+        }
+        document.getElementById("text3").innerHTML = best2;
+        let x = "";
+        for (let i = 0; i < 5; i = i + 2) {
+            x += i;
+        }
+        document.getElementById("text4").innerHTML = x;
+        let best4 = { fname: "john", lname: "doe", age: 25 };
+        let a = "";
+        for (let s in best4) {
+            a += best4[s] + " ";
+        }
+        document.getElementById("text5").innerHTML = a;
+        let number = [23, 32, 43, 35, 454, 756];
+        let newnumber = "";
+        for (let n in number) {
+            newnumber += number[n] + " ";
+        }
+        document.getElementById("text6").innerHTML = newnumber;
+        const number1 = [23, 342, 343, 45, 565, 6, 7, 34, 23,]
+        let numbera = "";
+        number1.forEach(myfunction);
+        document.getElementById("text7").innerHTML = number1;
+        function myfunction(value, index, array) {
+            numbera += value;
+        }
+        //  ===================================================================== loop of =================================================================== //
+        let best5 = "";
+        for (let b of cars) {
+            best5 += cars[b] + "<br>"
+        }
+        document.getElementById("text8").innerHTML = best5;
+        let best6 = "priyanka";
+
+        let best7 = "";
+        for (let v of best6) {
+            best7 += v + "<br>";
+        }
+        document.getElementById("text9").innerHTML = best7;
+        let language = "JavaScript";
+
+        let next = "";
+        for (let c of language) {
+            next += c + "<br>";
+        }
+
+        document.getElementById("text10").innerHTML = next;
+        //  ======================================================================= while loop ============================================================================ -->
+        let syntax = "";
+        let y = 0;
+        while (y < 10) {
+            syntax += "this is paragraph " + y + " <br>";
+            y++;
+        }
+        document.getElementById("text11").innerHTML = syntax;
+        let syntax1 = "";
+        let f = 0;
+        do {
+            syntax1 += "this number is " + f + "<br>";
+            f++;
+        }
+        while (f < 10);
+        document.getElementById("text12").innerHTML = syntax1;
+// ================================================================= break the loop ============================================================== //
+        let syntax2 = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) { break; }
+            syntax2 += "The number is " + i + "<br>";
+        }
+
+        document.getElementById("text13").innerHTML = syntax2;
+        let syntax3 = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            syntax3 += "The number is " + i + "<br>";
+        }
+        document.getElementById("text14").innerHTML = syntax3;
+       function myfunction() {
+        let n=0;
+        return {
+         next:function(){
+            n += 10;
+            return{ value:n , done:false}; 
+         }
+        };
+       }
+       const n = myfunction();
+       n.next();
+       n.next();
+       n.next();
+       document.getElementById("text15").innerHTML=n.next().value;
+       function my(){
+        p =0;
+        return {
+            next:function(){
+                p += 10;
+                return{value:p,done:false};
+            }
+        };
+       }
+       const o = my();
+        o.next(); 
+        document.getElementById("text16").innerHTML=o.next().value;
+        const syntax4 = {};
+    </script>
+
+</body>
+
+</html>

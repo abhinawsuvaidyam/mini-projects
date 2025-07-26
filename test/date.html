@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+
+<body>
+    <p id="text"></p>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p id="text5"></p>
+    <p id="text6"></p>
+    <p id="text7"></p>
+    <p id="text8"></p>
+    <p id="text9"></p>
+    <p id="text10"></p>
+    <p id="text11"></p>
+    <p id="text12"></p>
+ <script>
+  const dat = [
+    "january","february","march","april","may","june",
+    "july","august","september","october","november","december"
+  ];
+
+  const date1 = new Date(2025, 6, 20, 11, 28, 30);  
+  const date2 = Date.parse("2025-07-20T11:28:30");  
+  const date3 = new Date("2025-07-20");    
+  const date4 = dat[date3.getMonth()];
+  const date5 = new Date();                 
+  const date6 = dat[date5.getMonth()];  
+  const date7 = date1.getDate();          
+  document.getElementById("text").textContent =
+    `${date1}  ${date2}  ${date1.getFullYear()}  ${date1.getMonth()} `;
+
+  document.getElementById("text1").textContent = `${date4}  ${date6} ${date1.getDate()} ${date1.getDay()} ${date1.getHours()} ${date1.getMinutes()} ${date1.getSeconds()} ${date1.getMilliseconds()}`;
+  const date8 = ["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"];
+  const date9 = date8[date5.getDay()];
+  document.getElementById("text2").innerHTML=date9+" "+ date5.getTimezoneOffset();
+  date3.setFullYear(2020);
+  document.getElementById("text3").innerHTML=date3;
+  date3.setFullYear(2020,11,3);
+  document.getElementById("text4").innerHTML=date3;
+  date3.setMonth(12);
+  document.getElementById("text5").innerHTML=date3;
+  date3.setDate(12);
+  document.getElementById("text6").innerHTML=date3;
+  let anyday;
+  const today =new Date();
+  const someday = new Date(2100,1, 12);
+  if (today>someday) {
+    anyday="my name is anthani gonesawel";
+  }else{
+    anyday="main duniya main akel hu";
+  }
+document.getElementById("text7").innerHTML=anyday +" " +Math.PI;
+</script>
+
+
+</body>
+
+</html>

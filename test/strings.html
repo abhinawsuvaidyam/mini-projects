@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+
+<body style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+    <p id="demo23"></p>
+    <button onclick="change()">try it</button>
+    <p id="demo24">"hello world"</p>
+    <button onclick="change2()">try it</button>
+    <p id="demo25">"HELlo WORld"</p>
+    <p id="demo26"></p>
+    <p id="demo27"></p>
+    <p id="demo28"></p>
+    <p id="demo29"></p>
+    <button onclick="yourfunction()">text changer</button>
+    <p id="demo30">hello patna!</p>
+    <p id="demo31"></p>
+    <p id="demo32"></p>
+    <p id="demo33"></p>
+    <p id="demo34"></p>
+    <p id="demo35"></p>
+    <p id="demo36"></p>
+    <p id="demo37"></p>
+    <p id="demo38"></p>
+    <p id="demo39"></p>
+
+    <script>
+        let text = "somu";
+        let text1 = "singh";
+        document.getElementById("demo").innerHTML = text + (" ") + text1;
+        let text2 = 'abhi';
+        let text3 = 'naw';
+        document.getElementById('demo1').innerHTML = text2 + text3 + (" ") + text + (" ") + text1;
+        let text4 = `abhinaw pratap`;
+        let text5 = `singh`;
+        document.getElementById("demo2").innerHTML = text4 + (" ") + text5;
+        let text6 = 'abcdefghijklmnopqrstuvwxyz'
+        document.getElementById('demo3').innerHTML = text6.length;
+        let text7 = "they are so called \"vikings\" from north"
+        document.getElementById('demo4').innerHTML = text7;
+        let text8 = "RAGNAR lothbrok is one of the gratest vikings king vikings"
+        document.getElementById("demo5").innerHTML = text8;
+        let text9 = "VIKING\'S are one of the greatest warriors of all time \\ they are goat"
+        const texta = "VIKING\'S are one of the greatest warriors of all time \\ they are goat"
+
+        let text10 = texta[0];
+        document.getElementById('demo6').innerHTML = text9;
+        let x = "somu";
+        let x1 = new String("somu");
+        let y = new String("somu");
+        document.getElementById("demo7").innerHTML = typeof x + "<br>" + typeof y;
+        document.getElementById("demo8").innerHTML = (x == y);
+        document.getElementById("demo9").innerHTML = (x === y);
+        document.getElementById("demo10").innerHTML = (x1 == y);
+        document.getElementById("demo11").innerHTML = (x1 === y);
+        document.getElementById("demo12").innerHTML = text9.charAt(0);
+        document.getElementById("demo14").innerHTML = text9.charCodeAt(0);
+        document.getElementById("demo15").innerHTML = text9.at(0);
+        document.getElementById("demo16").innerHTML = text10;
+        // ===========================================================  string slice() ====================================================================== //
+        let text11 = "apple, banana, kiwi";
+        let text12 = text11.slice(3, 13);
+        let text13 = text11.slice(-12);
+        let text14 = text11.slice(-12, -1)
+        document.getElementById("demo17").innerHTML = text12;
+        document.getElementById("demo18").innerHTML = text13;
+        document.getElementById("demo19").innerHTML = text14;
+        document.getElementById("demo20").innerHTML = text11.substring(7, 11);
+        document.getElementById("demo21").innerHTML = text11.substr(7, 9);
+        document.getElementById("demo22").innerHTML = text11.substr(7);
+        document.getElementById("demo23").innerHTML = text11.substr(-4);
+        //   =================================================== javascript string to case =========================================================== //
+        function change() {
+            let casse = document.getElementById("demo24").innerHTML;
+            document.getElementById("demo24").innerHTML = casse.toUpperCase();
+        }
+        function change2() {
+            let casse1 = document.getElementById("demo25").innerHTML;
+            document.getElementById("demo25").innerHTML = casse1.toLowerCase();
+
+        }
+        // ====================================================== javascript string trim tags =========================================================== //
+        let text15 = "          hello world i am abhinaw             ";
+        let text16 = "'world!'";
+        let text17 = text15.concat(" ", text16);
+        let text18 = text15.trim();
+        let text19 = text15.trimStart();
+        let text20 = text15.trimEnd();
+        document.getElementById("demo26").innerHTML = text17;
+        document.getElementById("demo27").innerHTML = "length of text15:= " + text15.length + "  <br> " + "length of text18:= " + text18.length;
+        document.getElementById("demo28").innerHTML = "length of text19:=" + text19.length + " <br> " + "length of text120:=" + text20.length;
+        // ===================================================== javascript string padding and repeat tags ===================================================== //
+        let text21 = "5";
+        text21 = text21.padStart(10, "1");
+        let text22 = "5"
+        text22 = text22.padEnd(10, "1")
+        document.getElementById("demo29").innerHTML = text21 + "<br>" + text22 + (" ") + text16.repeat(3);
+        // ========================================================= javascript string replace tag ============================================================//
+        function yourfunction() {
+            let value = document.getElementById("demo30").innerHTML;
+            document.getElementById("demo30").innerHTML = value.replace("patna!", "chapra!");
+        }
+        let text23 = "a,b,c,d,e,f";
+        const text24 = text23.split(",");
+        document.getElementById("demo31").innerHTML = text24[0];
+        // ==================================================== string search ====================================================================== //
+        let index1 = text8.lastIndexOf("vikings");
+        let index = text8.indexOf("vikings");
+        let index2 = text8.indexOf("vikkings");
+        let index3 = text8.indexOf("vikings", 42);
+        const index4 = text8.match(/ing/g);
+        const index5 = text8.matchAll("ing")
+        document.getElementById("demo32").innerHTML = index + (" ") + index2;
+        document.getElementById("demo33").innerHTML = index1;
+        document.getElementById("demo34").innerHTML = index3;
+        document.getElementById("demo35").innerHTML = index4.length + " " + index4.join(",");
+        document.getElementById("demo36").innerHTML = Array.from(index5);
+        document.getElementById("demo37").innerHTML = text8.includes("vikings") + " " + text8.includes("vikings", 22) + " "
+            + text.startsWith("vikings") + (" ") + text8.startsWith("lothbrok", 7) + " " + text8.endsWith("vikings");
+        let firstname ="hello";
+        let lastname= "priyanka";
+        let index6 =`${firstname} ${lastname}`;
+        let price=10;
+        let vat=1.5;
+        let total=`total:${(price*(2+vat).toFixed(2))}`
+ document.getElementById("demo38").innerHTML=index6 +(" ")+total;
+    </script>
+</body>
+
+</html>

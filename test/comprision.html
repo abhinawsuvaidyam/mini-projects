@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprision</title>
+</head>
+<body>
+<button onclick="my()">click me</button>
+<input type="text" id="lim" value="20">
+<p id="limt"></p>
+<button onclick="your()">click me</button>
+<input type="text" id="limta" value="20">
+<p id="limtb"></p>
+<script>
+    function my(){
+        let age =document.getElementById("lim").value;
+        let vote=(age<18)?  "too young":"old enough";
+        document.getElementById("limt").innerHTML=vote+" to vote";
+    }
+    function your(){
+        let voteable ;
+        let age1 = Number(document.getElementById("limta").value);
+        if (isNaN(age1)){
+            voteable = "input is not a number";
+        }else {
+            voteable=(age1>18)? "too young":"olg enough";
+            
+        }
+        document.getElementById("limtb").innerHTML=voteable + " to vote";
+    }
+</script>
+</body>
+</html>

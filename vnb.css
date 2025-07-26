@@ -1,0 +1,38 @@
+body {
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(49, 71, 71);
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(179, 181, 181);
+    padding: 8ox 16px;
+}
+
+a:hover:not(.m) {
+    background-color: rgb(2, 69, 69);
+    color: white;
+}
+
+div {
+    margin-left: 25%;
+    height: 1000px;
+    overflow-y: auto;
+    padding: 16px 8px;
+}
+
+.m {
+    color: bisque;
+    background-color: rgb(75, 75, 235);
+}

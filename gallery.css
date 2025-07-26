@@ -1,0 +1,24 @@
+.gallary {
+    /* display: flex; */
+    /* grid-area: 5px; */
+    border: 1px solid black;
+    margin: 5px;
+    width: 180px;
+    float: left;
+}
+
+div.gallary img {
+    height: auto;
+    width: 100%;
+
+
+}
+
+.discription {
+    text-align: center;
+    padding: 15px;
+}
+
+div.gallary:hover {
+    border: 5px solid red;
+}

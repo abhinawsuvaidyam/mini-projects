@@ -1,0 +1,297 @@
+<html>
+
+<head>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+</head>
+
+<body>
+  <p id="mia"></p>
+  <button style="border: 1px solid black ; background-color: aqua; border-radius: 12px; color: aliceblue; box-shadow: 0px 3px 3px 3px ;" onclick="document.getElementById('mia').innerHTML=Date()">current time</button>
+  <p id="huu"></p>
+  <button onclick="this.innerHTML=Date()">current time in same Paragraph</button>
+  <button onclick=""></button>
+  <h2>Demo JavaScript in Head</h2>
+
+  <p id="demo">A Paragraph.</p>
+
+  <button type="button" onclick="myFunction()">Try it</button>
+  <p id="jo"></p>
+  <script>
+    document.getElementById("jo").innerHTML = "<h1>hey i am abhinaw pratap singh</h1>"
+  </script>
+  <p id="hu"></p>
+  <script>
+    let a = document.getElementById("hu").innerText = "i am somu singh"
+    let count = 2 + 5
+    console.log("jjvjvjvch", count);
+
+  </script>
+  <script>
+    document.write(10 * 5)
+  </script>
+  <button type="button" onclick="document.write(10*10)">try it</button>
+  <script>
+    window.alert(142 + 1)
+  </script><br>
+  <button onclick="window.print()">print the page</button>
+  <p id="daulat"></p>
+  <script>
+    let x, y, z;
+    x = 10;
+    y = 5;
+    z = x - y;
+    document.getElementById("daulat").innerHTML =
+      "the value of z is" + z + ".";
+
+  </script>
+  <p id="sunn"></p>
+  <script>
+    document.getElementById("sunn").innerHTML = "hey brother"
+  </script>
+
+  <p id="koi"></p>
+  <script>
+    let d, b, c;
+    d = 10;
+    b = 15;
+    c = d + b;
+    document.getElementById("koi").innerHTML = c;
+  </script>
+  <p id="abhi"></p>
+  <p id="abhi"></p>
+  <script>
+    document.getElementById("abhi").innerHTML = (4 + 6) * 8;
+  </script>
+  <p id="tum"></p>
+  <p id="love"> </p>
+  <p id="tu"></p>
+  <p id="hii"></p>
+  <script>
+    let l, m;
+    l = 10;
+    m = 1;
+    document.getElementById("tum").innerHTML = (l + m);
+
+    let h;
+    h = 10;
+    document.getElementById("tu").innerHTML = h * 9;
+
+    let text1 = "a";
+    let text2 = "b";
+    let result = text1 < text2;
+    document.getElementById("hii").innerHTML = "Is a is greater then b ?" + result;
+
+
+
+    let text3 = "what a beautiful ";
+    text3 += "day";
+
+    let f = 2 + 2;
+    let g = 10;
+    let n = 12;
+
+    document.getElementById("love").innerHTML =
+      text3 + "<br>" + f + " <br> " + g + "<br>" + n;
+
+
+
+  </script>
+
+
+  <p id="kallu"></p>
+  <p id="musafir"></p>
+  <script>
+    function toCelsius(f) {
+      return (5 / 9) * (f - 32);
+    }
+
+    let value = toCelsius(273);
+    document.getElementById("kallu").innerHTML = value;
+  </script>
+  <p id="majnu"></p>
+
+  <script>
+    function toCelsius(f) {
+      return (5 / 9) * (f - 32);
+    }
+
+    let dw = toCelsius;
+    document.getElementById("majnu").innerHTML = dw;
+    let cola = " aye mere humsafar" + (" ") + toCelsius(123) + (" ") + "janam dekh lo mit gyi duriya main yaha hu yaha hu yaha hu yaha";
+    document.getElementById("musafir").innerHTML = cola;
+  </script>
+  <p id="lal"></p>
+  <script>
+    const person = {
+      firstname: "Abhinaw",
+      lastname: "pratap",
+      id: 5888,
+      fullname: function () {
+        return this.firstname + (" ") + this.lastname;
+      }
+    };
+    document.getElementById("lal").innerHTML = person.fullname();
+  </script>
+  <p id="monu"></p>
+  <p id="lol"></p>
+
+  <script>
+    const monu = {
+      firstname: "bholu",
+      lastname: "sonu",
+      age: 40,
+      fullname: function () {
+        return this.firstname + " " + this.lastname;
+      }
+    };
+
+    const e = monu;
+    e.age = 10; // This changes monu.age as well because x is a reference
+
+    document.getElementById("lol").innerHTML = monu.fullname();
+    document.getElementById("monu").innerHTML = monu.firstname + " is " + monu.age + " years old";
+  </script>
+  <p id="lala"></p>
+  <p id="janu"></p>
+  <p id="manu"></p>
+  <p id="anu"></p>
+  <p id="nur"></p>
+  <p id="zone"></p>
+  <p id="tip"></p>
+  <script>
+    const lalu = {
+      firstname: "jawahar",
+      lastname: "lal",
+      age: 90,
+      cars: {
+        car1: "volvo",
+        car2: "jagwar",
+        car3: "hundai",
+        car4: "bmw",
+      }
+    }
+    delete lalu.cars.car3
+    lalu.color = "pink";
+    document.getElementById("lala").innerHTML = lalu.firstname + (" ") + lalu.lastname + " is " + lalu.age + " years old and he have a " + lalu.cars["car2"];
+    const jhol = {
+      firstname: "Priyanka",
+      lastname: "kumari",
+      age: 19,
+
+    };
+    jhol.name = function () {
+      return this.firstname + " " + this.lastname;
+    };
+    document.getElementById("janu").innerHTML = jhol.name() + " is " + jhol.age + " years old ";
+    const sole = {
+      firstname: "Priyanka",
+      lastname: "kumari",
+      age: 19,
+
+    };
+    sole.name = function () {
+      return (this.firstname + " " + this.lastname).toUpperCase();
+    };
+    document.getElementById("manu").innerHTML = sole.name() + " is " + jhol.age + " years old ";
+    const ole = {
+      firstname: "Priyanka",
+      lastname: "kumari",
+      age: 19,
+
+    };
+    sole.name = function () {
+      return (this.firstname + " " + this.lastname).toUpperCase();
+    };
+
+    let next = " ";
+    for (let v in ole) {
+      next += ole[v] + "";
+    };
+
+    document.getElementById("anu").innerHTML = next;
+    const mole = {
+      firstname: "Priyanka",
+      lastname: "kumari",
+      age: 19,
+
+    };
+    const myarrry = Object.values(mole);
+    document.getElementById("nur").innerHTML = myarrry;
+    const hol = {
+      firstname: "Priyanka",
+      lastname: "kumari",
+      age: 19,
+
+    };
+    let not = "";
+    for (let [prop, name] of Object.entries(hol)) {
+      not += prop + " : " + name + " <br> ";
+    }
+    document.getElementById("zone").innerHTML = not;
+    function dhoni(first, last, age, eye) {
+      this.firstname = first;
+      this.lastname = last;
+      this.age = age;
+      this.eyecolor = eye;
+    }
+    const sakira = new dhoni("somu", "singh", 21, "black");
+
+    document.getElementById("tip").innerHTML = sakira.firstname + (" ") + sakira.lastname + " is " + sakira.age + " years old and he have " + sakira.eyecolor + " eye "
+
+  </script>
+  <p id="ritesh"></p>
+  <p id="priyanshu"></p>
+  <p id="insert"></p>
+  <script>
+    const abhin = {
+      firstname: "abhinaw",
+      lastname: "singh",
+      age: 21,
+    }
+    function texta() {
+      return abhin.firstname + " " + abhin.lastname;
+    }
+    document.getElementById("ritesh").innerHTML = texta();
+    function home(first, last, age, eye) {
+      this.firstname = first;
+      this.lastname = last;
+      this.age = age;
+      this.eyecolor = eye;
+    }
+    const me = new home("abhi", "singh", 19, "blue");
+    const you = new home("somu", "singh", "21", "green");
+    document.getElementById("priyanshu").innerHTML = me.firstname + me.lastname + me.age + me.eyecolor + you.firstname + you.lastname + you.age + you.eyecolorp;
+    function ome(first, last, age, eye) {
+      this.firstname = first;
+      this.lastname = last;
+      this.age = age;
+      this.eyecolor = eye;
+    }
+    const myname = new ome("abhi", "pratap", 21, "black");
+
+    ome.prototype.changeName = function (name) {
+      this.firstname = name;
+    }
+    myname.changeName("abhinaw");
+
+    document.getElementById("insert").innerHTML = myname.firstname + (" ") + myname.lastname;
+
+  </script>
+  <h2>A=6</h2>
+  <h2>B=6</h2>
+  <button onclick="add()">addition</button>
+  <script>
+    const a1 = 6;
+    const  b1 =6;
+    function add(){
+      alert(a1+b1)
+    }
+  </script>
+
+</body>
+
+</html>

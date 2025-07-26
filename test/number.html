@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <script>
+        let x = 0.4 + 0.5;
+        let x1 = (0.4 * 10 + 0.5 * 10) / 10;
+        let x2 = "0.4" + " " + "0.5"
+        let x3 = "100";
+        let x4 = "10";
+        let x5 = x3 - x4;
+        let x6 = "apple";
+        let x7 = x3 / x6;
+        let x8 = NaN;
+        let x9 = "";
+        while (x4 != Infinity) {
+            x4 = x4 * x4;
+            x9 = x9 + x4 + "<br>";
+        }
+        const x10 = 0xff;
+        const x11 = 0xef;
+        const x12 = 244e5;
+
+        document.getElementById("demo").innerHTML = "0.4 + 0.5:= " + x;
+        document.getElementById("demo1").innerHTML = " (0.4*10 + 0.5*10)/10:= " + x1;
+        document.getElementById("demo2").innerHTML = x2;
+        document.getElementById("demo3").innerHTML = x3 / x4 + "<br>" + x3 * x4 + "<br>" + x5;
+        document.getElementById("demo4").innerHTML = x3 / x6 + " " + isNaN(x7) + " " + typeof x8;
+        document.getElementById("demo5").innerHTML = x9 + "<br>" + typeof Infinity + " " + "0xff:= " + x10 + (" ") + x11 + " " + x12;
+    </script>
+
+
+
+
+    <h2>Using Number.EPSILON</h2>
+
+    <p id="demoa1"></p>
+    <p id="demoa2"></p>
+    <p id="demoa3"></p>
+
+    <script>
+    
+        let a = 0.1 + 0.2;
+        let b = 0.3;
+
+        
+        document.getElementById("demoa1").innerHTML = "0.1 + 0.2 = " + a;
+
+        document.getElementById("demoa2").innerHTML = "Is 0.1 + 0.2 === 0.3? " + (a == b);
+
+        
+        function areEqual(x, y) {
+            return Math.abs(x - y) < Number.EPSILON;
+        }
+
+        document.getElementById("demoa3").innerHTML =
+            "Is 0.1 + 0.2 approximately equal to 0.3? " + areEqual(a, b);
+    </script>
+
+
+
+
+</body>
+
+</html>

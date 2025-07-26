@@ -1,0 +1,205 @@
+@media screen and (max-width:990px) {
+    .sub-main4 {
+        flex-direction: column;
+        padding: 100px 5% 8% 5%;
+        height: fit-content;
+    }
+
+    .data1 {
+        width: 90% !important;
+        height: 900px !important;
+    }
+
+    .imga {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90% !important;
+    }
+
+    .circle {
+        position: absolute;
+        top: 760px !important;
+    }
+
+    .data2 {
+        width: 90% !important;
+        height: 700px !important;
+    }
+
+    .data3 {
+        width: 90% !important;
+        height: 900px !important;
+    }
+    .min-text9 {
+        width: 70% !important;
+        margin-left: 15% !important;
+        height: auto !important;
+    }
+    .img9 {
+        gap: 5% !important;
+    }
+    .sub-img9{
+        width: 47.5% !important;
+        height: auto !important;
+        padding-left: 4% !important;
+    }
+
+}
+
+@media screen and (max-width:560px) {
+    .blur1 {
+        width: 80% !important;
+        position: absolute !important;
+        left: 10% !important;
+
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .sub-main6 {
+
+        padding: 100px 100px !important;
+    }
+
+}
+
+@media screen and (max-width:1060px) {
+    .sub-main6 {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 100px;
+
+    }
+
+    .min-data {
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .sub-main7-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button-text {
+        margin-left: -10px !important;
+    }
+
+    .min-text {
+        width: 100% !important;
+        height: auto !important;
+        text-align: center !important;
+    }
+    .sub-main10 .text10 {
+         width: 60% !important;
+    height: auto !important;
+    }
+    .sub-main11 {
+        flex-direction: column !important; 
+          margin-top: -300px !important;  
+    }
+    .sub-main11 .internal1 {
+         width: 100% !important;
+    height: auto;
+    }
+    .social11 {
+        flex-direction: column !important;
+    }
+    .social11 .social-text {
+          width: 100% !important;
+    height: auto;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    }
+    .customer-details {
+    width: 100% !important;
+    height: fit-content;
+    margin-top: 50px !important;
+    }
+    .footer {
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .footer .text12a {
+        margin-top: 100px !important;
+        text-align: center !important;
+    }
+    .footer .text12 {
+        /* margin-top: 100px !important; */
+        text-align: center !important;
+    }
+
+}
+@media screen and (max-width:1105px) {
+     .sub-main8 {
+        flex-direction: column;
+     }
+     .list1 {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 50px !important;
+     }
+     .img-main8 {
+        width: 100% !important;
+        height: 400px !important;
+     }
+        .img-main8 img {
+        width: 100% !important;
+        height: 400px !important;
+     }
+     .text-main8 {
+        width: 100% !important;
+        height: auto !important;
+     }
+}
+@media screen and (max-width:770px) {
+        /* .img9 {
+        gap: 5% !important;
+    } */
+    .sub-img9{
+        width: 95% !important;
+        height: auto !important;
+        padding-left: 8% !important;
+    }
+        .sub-main11 {
+        /* flex-direction: column !important;  */
+          margin-top: -150px !important;  
+    }
+    
+.navbar8 {
+    /* display: flex; */
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+
+
+    left: 10px !important;
+    bottom: -60px !important;
+}
+}
+@media screen and (max-width:900px) {
+        .sub-main11 {
+        /* flex-direction: column !important;  */
+          margin-top: -200px !important;  
+    }
+      .blur1 {
+        width: 80% !important;
+        position: absolute !important;
+        left: 10% !important;
+
+    }
+    .blur2 {
+        position: absolute !important;
+        top: 200px !important;
+        left: 5vw !important;
+        width: 90vw !important;
+    }
+}

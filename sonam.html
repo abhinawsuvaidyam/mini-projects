@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        input[type=text]:focus {
+            background-color: aqua;
+        }
+
+        .a {
+            padding: 10px 10px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        a:hover {
+            width: 500px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abhi.html</title>
+</head>
+
+<body>
+    <iframe src="" frameborder="0"></iframe>
+    <h1 style="text-align: center;background-color: black;color: brown;">form</h1>
+    <form action="C:\Users\Suvaidyam\Desktop\somu\monu.html">
+        <label for="ink">first name:</label><br>
+        <input type="text" id="ink" name="ink" placeholder="text" autofocus><br>
+        <label for="my">middle name:</label><br>
+        <input type="text" id="my" name="my" placeholder="text"><br>
+        <label for="ju">last name:</label><br>
+        <input type="text" id="ju" name="ju" value="rajput" readonly><br><br>
+        <input type="hidden" value="miss india" name="miss india">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <hr>
+    <h1 style="text-align: center; background-color: black; color: brown;">Choose your fav animal</h1>
+    <form action="">
+        <input type="radio" id="ink" name="fav animal" value="lion">
+        <label for="ink">Lion</label><br>
+        <input type="radio" id="my" name="fav animal" value="fox">
+        <label for="my">Fox</label><br>
+        <input type="radio" id="ju" name="fav animal" value="elephant">
+        <label for="ju">Elephants</label><br><br>
+    </form>
+    <hr>
+    <h1 style="text-align: center; background-color: black;color: brown;">check boxes</h1>
+    <form action="">
+        <input type="checkbox" id="ink" value="car">
+        <label for="ink">i have a car</label><br>
+        <input type="checkbox" id="my" value="bike">
+        <label for="my">i have a bike</label><br>
+        <input type="checkbox" id="ju" value="cycle">
+        <label for="ju">i have a cycle</label><br><br>
+        <input type="submit" value="submit">
+
+    </form>
+    <hr>
+    <h1 style="text-align: center; background-color: black;color: brown;font-size: 60;">car</h1>
+    <form action="">
+        <label for="ink">choose a car</label>
+        <select name="car" id="ink" size="2">
+            <option value="volvo">volvo</option>
+            <option value="audi">audi</option>
+            <option value="mahindra">mahindra</option>
+            <option value="tata">tata</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <form action="">
+        <h1 style="text-align: center; background-color: black; color: brown; ">i am going to become a developer</h1>
+        <textarea name="abhi" id="naw" rows="10" cols="50">cat is a pet animal</textarea>
+    </form>
+    <hr>
+    <h1 style="text-align: center;background-color: black; color: brown;">Personal Name</h1>
+    <form action="">
+        <fieldset>
+            <legend>personalia</legend>
+            <label for="ink">first name</label><br>
+            <input type="text" id="ink" name="ink" placeholder="text" disabled><br>
+            <label for="my">middle name</label><br>
+            <input type="my" name="my" id="my" placeholder="text"><br>
+            <label for="ju">last name</label><br>
+            <input type="ju" id="ju" name="ju" placeholder="text"><br><br>
+            <input type="submit" name="submit">
+        </fieldset>
+    </form>
+    <h1 style="text-align: center; background-color: black; color: brown;">datalist</h1>
+    <p>select your fav person</p>
+    <form action="">
+        <input type="text" list="mom" name="mom">
+        <datalist id="mom">
+            <option value="abhi">abhi</option>
+            <option value="vish">vish</option>
+            <option value="pri">pri</option>
+            <option value="son">son</option>
+        </datalist>
+        <input type="submit" name="submit">
+    </form>
+    <hr>
+    <h1 style="text-align: center; background-color: black; color: brown;">color</h1>
+    <form action="">
+        <input type="color" id="ink" name="ink" value="blue">
+        <label for="ink">choose</label>
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <h1 style="text-align: center; background-color: black; color: brown;">Date</h1>
+    <form action="">
+        <label for="my">birthday date:</label>
+        <input type="date" id="my" value="dd,mm,yyyy" name="selected">
+        <input type="submit" value="submit">
+    </form>
+    <form action="">
+        <label for="my">select date:</label>
+        <input type="date" id="my" value="dd,mm,yyyy" name="my" min="2004-01-01">
+        <input type="submit" value="submit">
+    </form>
+    <form action="">
+        <label for="my">select date:</label>
+        <input type="datetime-local" id="my" value="dd,mm,yyyy" name="my" max="2004-01-01">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <h1
+        style="text-align: center; background-color: black; color: brown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        email</h1>
+    <form action="">
+        <label for="ink">write your email id</label>
+        <input type="email" id="ink" name="ink" value="text">
+        <input type="image" src="&#9989">
+    </form>
+    <hr>
+    <h1
+        style="text-align: center; background-color: black; color: brown;  font-size: 30; margin: 10%; padding: 5px; border: 2px;">
+        file</h1>
+    <form action="">
+        <label for="my">select file:</label>
+        <input type="file" id="my" name="my"><br><br>
+        <input type="submit" value="submit">
+        <hr>
+        <h1 style="text-align: center; background-color: black; color: brown;">phone num</h1>
+        <form action="">
+            <label for="MY"><b>ENTER </b><i>phone num</i></label>
+            <input type="tel" id="MY" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" value="123-1234-123">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <form action="">
+            <label for="i">select quantity</label>
+            <input type="number" id="i" name="my" max="5" min="0" value="0">
+        </form>
+        <form action="">
+            <label for="i">select quantity</label>
+            <input type="range" id="i" name="my" max="100" min="0" value="50">
+        </form>
+        <hr>
+        <h1 style="text-align: center; background-color: rgba(152, 111, 111, 0.757); color: rgb(42, 77, 165);">google
+        </h1>
+
+        <form action="">
+            <label for="i">google serch</label>
+            <input class="a" type="search" id="i" name="my">
+            <input type="submit" value="search">
+        </form>
+        <hr>
+        <h1>somu</h1>
+        <form action="">
+            <label for="INK">IMP</label>
+            <input type="text" maxlength="10" name="n" id="INK" size="50"><br><br>
+            <label for="IN">pin</label>
+            <input type="text" id="IN" name="n" size="5">
+        </form>
+</body>
+
+</html>

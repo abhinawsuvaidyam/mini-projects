@@ -1,0 +1,49 @@
+body {
+    margin: 0%;
+    background-color: aqua;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(93, 37, 142);
+    width: 100px;
+    overflow: hidden;
+    list-style-type: none;
+    position: fixed;
+    top: 0px;
+}
+
+li {
+    float: left;
+
+}
+
+a:active {
+    background-color: sienna;
+}
+
+li a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.m {
+    background-color: sienna;
+}
+
+a:hover:not(.m) {
+    background-color: rgb(1, 2, 30);
+}
+
+div {
+    margin-top: 20px;
+    height: 1500px;
+    width: 100%;
+    overflow: auto;
+    padding: 20px 30px;
+    background-color: aquamarine;
+}

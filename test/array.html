@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+
+<body>
+    <button onclick="text2()">test it</button>
+    <p style="background-color: aqua;" id="demo"></p>
+    <p style="background-color: aqua;" id="demo1"></p>
+    <button onclick="text3()">love it</button>
+    <p style="background-color: aqua;" id="demo2"></p>
+    <p style="background-color: aqua;" id="demo3"></p>
+    <p style="background-color: aqua;" id="demo4"></p>
+
+    <p style="background-color: aqua;" id="demo5"></p>
+    <p style="background-color: aqua;" id="demo6"></p>
+    <p style="background-color: aqua;" id="demo7"></p>
+    <script>
+        const fruits = ["gauva", "mango", "banana", "apple"]
+        document.getElementById("demo").innerHTML = fruits[fruits.length - 1];
+        let lnt = fruits.length;
+        document.getElementById("demo1").innerHTML = lnt;
+        const classs = ["priyanka", "riya", "anu", "gungun",]
+        classs[4] = "abhinaw";
+        let clas = classs[0]
+        document.getElementById("demo2").innerHTML = clas + " " + classs.length + " " + classs[4];
+        let text = "<ul>";
+        for (let i = 0; i < classs.length; i++) {
+            text += "<li>" + classs[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo3").innerHTML = text;
+        const animal = ["human", "dog", "lion", "tiger"];
+        let text1 = "<ul>";
+        for (let p = 0; p < animal.length; p++) {
+            text1 += "<li>" + animal[p] + "</li>";
+        }
+        text1 += "</ul>";
+        document.getElementById("demo4").innerHTML = text1;
+        function text2() {
+            fruits.push("lemon")
+            document.getElementById("demo").innerHTML = fruits;
+
+        }
+        function text3() {
+            classs[classs.length] = "gungun";
+            document.getElementById(demo2).innerHTML = classs;
+        }
+        document.getElementById("demo5").innerHTML = Array.isArray(classs);
+        document.getElementById("demo6").innerHTML = fruits instanceof Array;
+        let x = "";
+        const text4 = {
+            name: "jhon",
+            age: 32,
+            cars: [
+                { name: "ford", models: ["fiesta", "bonous", "mustang"] },
+                { name: "volvo", models: ["bonous", "mustang"] },
+                { name: "ford", models: ["fiesta", "bonous"] }
+            ]
+
+        }
+        for (let i in text4.cars) {
+            x += "<h2>" + text4.cars[i].name + "</h2>";
+            for (let j in text4.cars[i].models) {
+                x += text4.cars[i].models[j] + "<br>";
+            }
+        }
+        document.getElementById("demo7").innerHTML = x;
+    </script>
+    <!-- ================================================================ array method  ==================================================================== -->
+    <p style="background-color: aqua;" id="demo8"></p>
+    <p style="background-color: aqua;" id="demo9"></p>
+    <p style="background-color: aqua;" id="demo10"></p>
+    <p style="background-color: aqua;" id="demo11"></p>
+    <p style="background-color: aqua;" id="demo12"></p>
+    <p style="background-color: aqua;" id="demo13"></p>
+    <p style="background-color: aqua;" id="demo13a"></p>
+    <p style="background-color: aqua;" id="demo14"></p>
+    <p style="background-color: aqua;" id="demo15"></p>
+    <p style="background-color: aqua;" id="demo16"></p>
+    <p style="background-color: aqua;" id="demo17"></p>
+    <p style="background-color: aqua;" id="demo18"></p>
+    <p style="background-color: aqua;" id="demo19"></p>
+    <p style="background-color: aqua;" id="demo20"></p>
+    <p style="background-color: aqua;" id="demo21"></p>
+    <p style="background-color: aqua;" id="demo22"></p>
+    <p style="background-color: aqua;" id="demo23"></p>
+    <p style="background-color: aqua;" id="demo24"></p>
+    <p style="background-color: aqua;" id="demo25"></p>
+    <p style="background-color: aqua;" id="demo26"></p>
+    <p style="background-color: aqua;" id="demo27"></p>
+    <p style="background-color: aqua;" id="demo28"></p>
+    <p style="background-color: aqua;" id="demo29"></p>
+    <p style="background-color: aqua;" id="demo30"></p>
+    <p style="background-color: aqua;" id="demo31"></p>
+    <p style="background-color: aqua;" id="demo32"></p>
+    <p style="background-color: aqua;" id="demo33"></p>
+    <p style="background-color: aqua;" id="demo34"></p>
+    <p style="background-color: aqua;" id="demo35"></p>
+    <p style="background-color: aqua;" id="demo36"></p>
+    <p style="background-color: aqua;" id="demo37"></p>
+    <div style="display: flex;flex-wrap: wrap; width: 100%; justify-content: space-between;align-items: center;">
+        <button onclick="myfunction1()">try it</button>
+        <button onclick="myfunction2()">lets do it</button>
+    </div>
+    <p style="background-color: aqua;" id="demo38"></p>
+
+    <script>
+        let text5 = ["hello", "world", "i", "am", "abhi"]
+        let text6 = text5.push("love-you");
+        document.getElementById("demo8").innerHTML = text5.join("+");
+        document.getElementById("demo9").innerHTML = text5.at(2);
+        document.getElementById("demo10").innerHTML = text5.toString();
+        document.getElementById("demo11").innerHTML = text5.length;
+        document.getElementById("demo12").innerHTML = text5.pop();
+        document.getElementById("demo13").innerHTML = text5.shift();
+        document.getElementById("demo13a").innerHTML = text5;
+        document.getElementById("demo14").innerHTML = text6;
+        let text7 = text5.unshift("lemon");
+        document.getElementById("demo15").innerHTML = text7;
+        document.getElementById("demo16").innerHTML = text5;
+        text5[text5.length] = "kiwi";
+        document.getElementById("demo17").innerHTML = text5;
+        delete text5[0];
+        document.getElementById("demo18").innerHTML = text5;
+        const text8 = fruits.concat(text5);
+        document.getElementById("demo19").innerHTML = text8;
+        const text9 = fruits.concat(classs, text5);
+        document.getElementById("demo20").innerHTML = text9;
+        const text10 = text9.concat("somu singh")
+        document.getElementById("demo21").innerHTML = text10;
+        document.getElementById("demo22").innerHTML = text10.copyWithin(4, 0)
+        const text11 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        const text12 = text11.flatMap(x => [x, x * 10]);
+        document.getElementById("demo23").innerHTML = text12;
+        let text13 = fruits.splice(2, 2, "banana", "kiwi.com")
+        document.getElementById("demo24").innerHTML = text13;
+        document.getElementById("demo25").innerHTML = fruits;
+        let text14 = fruits.toSpliced(0, 1, "dragonfruit");
+        document.getElementById("demo26").innerHTML = text14;
+        let text15 = fruits.slice(1, 3);
+        document.getElementById("demo27").innerHTML = text15;
+        document.getElementById("demo28").innerHTML = fruits;
+        // ================================================================= serach of ===============================================================//
+        document.getElementById("demo29").innerHTML = fruits.indexOf("kiwi") + " " + fruits.lastIndexOf("banana") + " " + fruits.includes("kiwi");
+        const animall = ["lion", "tiger", "dog", "human"];
+        let text16 = animall.find(myfunction);
+        document.getElementById("demo30").innerHTML = text16 + " " + animall.sort();
+        function myfunction(value, array, name) {
+            return value === "dog";
+        }
+        let text17 = [1, 12, 18, 21, 27]
+        let text18 = text17.findIndex(your)
+        function your(value, array) {
+            return value > 20;
+        }
+        document.getElementById("demo31").innerHTML = text18;
+        animall.reverse();
+        document.getElementById("demo32").innerHTML = animall;
+        animall.push("raja");
+        animall.sort();
+        animall.reverse();
+        document.getElementById("demo33").innerHTML = animall;
+        const animal1 = ["abhi", "naw", "mango", "pratap", "singh"]
+        const text19 = animal1.toSorted();
+        document.getElementById("demo34").innerHTML = text19;
+        // ==================================================================== sort() ========================================================================== //
+        let text20 = animal1.toReversed();
+        document.getElementById("demo35").innerHTML = text20;
+        let text21 = [1, 2, 3, 4, 4, 5, 7];
+        text21.sort(function (a, b) { return a - b });
+        document.getElementById("demo36").innerHTML = text21;
+        text21.reverse(function (a, b) { return b - a });
+
+        document.getElementById("demo37").innerHTML = text21;
+        let texta21 = [3, 2, 4, 1, 8, 9, 6];
+        let docment = document.getElementById("demo38")
+        docment.style.color = "red";
+        docment.innerHTML = texta21;
+        function myfunction1() {
+            texta21.sort();
+            let docment = document.getElementById("demo38");
+
+            document.innerHTML = texta21;
+            document.style.color = "black";
+        }
+        function myfunction2() {
+            texta21.reverse(function (a, b) { return b - a });
+            document.getElementById("demo38").innerHTML = texta21;
+        }
+
+
+    </script>
+    <div style="padding-right:20%;padding-left: 5%;display: flex;flex-wrap: wrap;justify-content: space-between;">
+        <button onclick="mynum()">love</button>
+    </div>
+    <p style="background-color: aqua;" id="demo39"></p>
+    <div>the lowest num:= <span style="background-color: aqua;" id="demo40"></span>
+    </div>
+    <div>the greatest num <span style="background-color: aqua;" id="demo41"></span></div>
+    <p style="background-color: aqua;">the gretest num is :=<span id="demo42"></span></p>
+    <p style="background-color: aqua;" id="demo43"></p>
+
+
+    <script>
+        let index1 = [12, 40, 30, 22, 44, 54];
+        function mynum() {
+            index1.sort(function () { return 0.5 - Math.random() });
+            document.getElementById("demo39").innerHTML = index1;
+        }
+        document.getElementById("demo39").innerHTML = index1;
+        document.getElementById("demo40").innerHTML = myarr(index1);
+        function myarr(arr) {
+            return Math.min.apply(null, arr);
+        }
+        document.getElementById("demo41").innerHTML = my(index1)
+        function my(arrr) {
+            return Math.max.apply(null, arrr);
+        }
+        const index2 = [12, 13, 20, 50, 100, 200, 150, 23];
+        document.getElementById("demo42").innerHTML = you(index2);
+        function you(cc) {
+            let len = cc.length;
+            let max = -Infinity;
+            while (len--) {
+                if (cc[len] > max) {
+                    max = cc[len];
+                }
+            }
+            return max;
+        }
+        const cars = [
+            { type: "volvo", years: "2016" },
+            { type: "bmw", years: "2010" },
+            { type: "mahindra", years: "2021" }
+        ];
+        cars.sort(function (a, b) { return a.years - b.years });
+        displaycars();
+        function displaycars() {
+            document.getElementById("demo43").innerHTML =
+                cars[0].type + " " + cars[0].years + "<br>" +
+                cars[1].type + " " + cars[1].years + "<br>" +
+                cars[2].type + " " + cars[2].years;
+        }
+
+    </script>
+    <button onclick="myfunction5()">check it</button>
+    <p style="background-color: aqua;" id="demo44"></p>
+    <p style="background-color: aqua;" id="demo45"></p>
+    <p style="background-color: aqua;" id="demo46"></p>
+    <script>
+        const details = [
+            { type: "abhinaw", year: "2004" },
+            { type: "vishwash", year: "2004" },
+            { type: "samar", year: "2003" }
+        ]
+        displaydetails();
+        function myfunction5() {
+            details.sort(function (a, b) {
+                const x = a.type.toLowerCase();
+                const y = b.type.toLowerCase();
+                if (x < y) return -1;
+                if (x > y) return 1;
+                return 0;
+            });
+            displaydetails();
+        }
+
+        function displaydetails() {
+            document.getElementById("demo44").innerHTML =
+                details[0].type + " " + details[0].year + "<br>" +
+                details[1].type + " " + details[1].year + "<br>" +
+                details[2].type + " " + details[2].year
+
+                ;
+
+
+        }
+        const on = [1, 2, 3, 4, 5, 6, 76];
+        let txt = " ";
+        on.forEach(myfun);
+        document.getElementById("demo45").innerHTML = txt;
+        function myfun(value, index, array) {
+            txt += value + " <br>";
+        }
+        const onward = [12, 23, 34, 23, 34, 45, 45, 56, 67];
+        let inwars = "";
+        onward.forEach(yourfun);
+        document.getElementById("demo46").innerHTML = inwars;
+        function yourfun(value) {
+            inwars += value + "<br>";
+        }
+    </script>
+
+    <!-- *CREATE A HYPER-DETAILED GRAPHIC DESIGN FEATURING A STRIKING PORTRAIT OF A YOUNG MAN WITH THE SAME FACE AS UPLOADED* WITH A CONFIDENT DEMEANOUR. HIS HEAD IS ADORNED WITH VOLUMINOUS, ADDING TEXTURE AND DEPTH TO THE COMPOSITION. THE PORTRAIT IS RENDERED IN A HIGH-CONTRAST BLACK-AND-WHITE STYLE, STANDING OUT AGAINST THE MINIMALIST BACKGROUND.
+HIS EXPRESSION IS CALM YET DETERMINED, WITH ONE EYE PARTIALLY OBSCURED BY A BOLD RED RECTANGULAR OVERLAY THAT ADDS A MODERN, ARTISTIC FLAIR.
+THE BACKGROUND IS A SMOOTH, TEXTURED GREY CANVAS, SERVING AS A NEUTRAL BACKDROP THAT ENHANCES THE FOCAL ELEMENTS.
+OVERLAID VERTICALLY ALONG THE LEFT SIDE OF THE IMAGE, THE WORD "PAUL SOMENDRA" IS REPEATED IN LARGE, BOLD BLACK LETTERS WITH A SLIGHT TRANSPARENCY EFFECT, CREATING A LAYERED, DYNAMIC LOOK.
+INTERSPERSED WITHIN THIS TEXT ARE ICONIC DESIGN ELEMENTS: A PROMINENT NIKE LOGO IN RED NEAR THE TOP, A STYLIZED RED "S" LOWER DOWN, AND A VERTICAL RED LINE THAT PUNCTUATES THE DESIGN.
+TO THE RIGHT, A RED GEOMETRIC FRAME SURROUNDS THE OBSCURED EYE, DRAWING ATTENTION TO THE INTERPLAY OF COLOUR AND FORM.
+AT THE BOTTOM RIGHT, THE PHRASE "WORK SMART NOT HARD" IS WRITTEN IN BOLD RED CAPITAL LETTERS..
+SURROUNDS THE OBSCURED EYE, DRAWING ATTENTION TO THE INTERPLAY OF COLOUR AND FORM.
+AT THE BOTTOM RIGHT, THE PHRASE "WORK SMART NOT HARD" IS WRITTEN IN BOLD RED CAPITAL LETTERS, WITH "SMART" IN A SMALLER, ELEGANT CURSIVE SCRIPT BENEATH IT SIGNED OFF WITH "GRAPHICS" IN A MATCHING STYLE, SUGGESTING A PERSONAL OR BRAND SIGNATURE.
+THE BOTTOM LEFT CORNER FEATURES THE HASHTAG #PAUL IN RED. REINFORCING THE IDENTITY THEME.
+THE YOUNG MAN'S ATTIRE, A PARTIALLY VISIBLE BLACK LEATHER JACKET WITH AN OPEN COLLAR, ADDS A RUGGED YET STYLISH EDGE TO THE OVERALL AESTHETIC.
+THE LIGHTING IS SOFT YET DRAMATIC. HIGHLIGHTING THE TEXTURES OF HIS HAIR AND JACKET, WHILE THE RED ACCENTS POP VIVIDLY AGAINST THE GRAYSCALE TONES, CREATING A COHESIVE, HIGH-ENERGY VISUAL THAT BLENDS STREETWEAR CULTURE WITH GRAPHIC ARTISTRY.
+PHOTOREALISTIC, SHALLOW DEPTH OF FIELD, HIGH-RESOLUTION DSLR QUALITY, HASSELBLAD X2D 100C, SHALLOW DEPTH OF FIELD, SHARPLY FOCUSED ON ME.
+4:5 ASPECT RATIO. MAKE IT 8K ULTRA REALISTIC, HYPER DETAILED* -->
+    <!-- ============================================================================== array iteration =========================================================================== -->
+    <p style="background-color: aqua;" id="syntax"></p>
+    <p style="background-color: aqua;" id="syntax1"></p>
+    <p style="background-color: aqua;" id="syntax2"></p>
+    <p style="background-color: aqua;" id="syntax3"></p>
+    <p style="background-color: aqua;" id="syntax4"></p>
+    <p style="background-color: aqua;" id="syntax5"></p>
+    <p style="background-color: aqua;" id="syntax6"></p>
+    <p style="background-color: aqua;" id="syntax7"></p>
+    <p style="background-color: aqua;" id="syntax8"></p>
+    <p style="background-color: aqua;" id="syntax9"></p>
+    <p style="background-color: aqua;" id="syntax10"></p>
+    <p style="background-color: aqua;" id="syntax11"></p>
+    <p style="background-color: aqua;" id="syntax12"></p>
+    <p style="background-color: aqua;" id="syntax13"></p>
+    <p style="background-color: aqua;" id="syntax14"></p>
+    <p style="background-color: aqua;" id="syntax15"></p>
+    <p style="background-color: aqua;" id="syntax16"></p>
+    <p style="background-color: aqua;" id="syntax17"></p>
+    <p style="background-color: aqua;" id="syntax18"></p>
+    <p style="background-color: aqua;" id="syntax19"></p>
+    <p style="background-color: aqua;" id="syntax20"></p>
+    <p style="background-color: aqua;" id="syntax21"></p>
+    <script>
+        const wind = [12, 23, 34, 45, 56, 67, 78, 43]
+        let txt1 = "";
+        wind.forEach(world);
+        document.getElementById("syntax").innerHTML = txt1;
+        function world(value, index, array) {
+            txt1 += value + "<br>";
+        }
+        const wind1 = [90, 30, 10, 20, 40, 60, 50, 80, 70];
+        let txt2 = wind1.sort();
+        document.getElementById("syntax1").innerHTML = txt2;
+        let txt3 = " ";
+        wind1.forEach(world1);
+        document.getElementById("syntax2").innerHTML = txt3;
+        function world1(value) {
+            txt3 += value + "<br>";
+        }
+        const wind2 = [45, 10, 20, 3, 4, 5];
+        const wind3 = wind2.map(world2);
+        document.getElementById("syntax3").innerHTML = wind3;
+        function world2(value, index, array) {
+            return value * 2;
+        }
+
+        const wind4 = [45, 10, 20, 3, 4, 5];
+        const wind5 = wind4.map(world3);
+        document.getElementById("syntax4").innerHTML = wind5;
+        function world3(value) {
+            return value * 3;
+        }
+        const wind6 = [43, 54, 65, 32, 12, 39];
+        const txt4 = wind6.flatMap(x => [x, x * 10]);
+        document.getElementById("syntax5").innerHTML = txt4;
+        const wind7 = [43, 54, 65, 32, 12, 39];
+        const txt5 = wind7.filter(world4);
+        document.getElementById("syntax6").innerHTML = txt5;
+        function world4(value, index, array) {
+            return value > 18
+        }
+        const wind8 = [43, 54, 65, 32, 12, 39];
+        const txt6 = wind8.reduce(world5);
+        document.getElementById("syntax7").innerHTML = txt6;
+        function world5(total, value, index, array) {
+            return total + value;
+        }
+        const wind9 = [25, 15, 10, 25, 25];
+        const txt7 = wind9.reduce(world6, 100);
+        document.getElementById("syntax8").innerHTML = txt7;
+        function world6(total, value) {
+            return total + value;
+        }
+        const wind10 = [25, 15, 10, 25, 25];
+        const txt8 = wind10.reduceRight(world7, 100);
+        document.getElementById("syntax9").innerHTML = txt8;
+        function world7(total, value) {
+            return total + value;
+        }
+        const wind11 = [43, 54, 65, 32, 12, 39];
+        const txt9 = wind11.every(world8);
+        document.getElementById("syntax10").innerHTML = txt9;
+        function world8(value, index, array) {
+            return value > 20;
+        }
+        const wind12 = [43, 54, 65, 32, 12, 39];
+        const txt10 = wind12.every(world9);
+        document.getElementById("syntax11").innerHTML = txt10;
+        function world9(value, index, array) {
+            return value > 10;
+        }
+        const wind13 = [43, 54, 65, 32, 12, 39];
+        const txt11 = wind13.some(world10);
+        document.getElementById("syntax12").innerHTML = txt11;
+        function world10(value, index, array) {
+            return value > 18;
+        }
+
+        const wind14 = Array.from("abcdefghijklmnopqrstuvwxyz");
+        document.getElementById("syntax13").innerHTML = wind14.join(", ");
+        const wind15 = ["abhinaw", "pratap", "singh"];
+        const keys = wind15.keys();
+        let tet = "";
+        for (let x of keys) {
+            tet += x + "<br>";
+        }
+        document.getElementById("syntax14").innerHTML = tet;
+        const wind16 = ["rana", "abhinaw", "bhanu", "pratap", "singh"];
+        const keys1 = wind16.keys();
+        let tet1 = "";
+        for (let x of keys1) {
+            tet1 += x + "<br>";
+        }
+        document.getElementById("syntax15").innerHTML = tet1;
+        const wind17 = ["rana", "abhinaw", "bhanu", "pratap", "singh"];
+        const txt12 = wind17.entries();
+        for (let x of txt12) {
+            document.getElementById("syntax16").innerHTML += x + "<br>";
+        }
+        const months = ["Januar", "Februar", "Mar", "April"];
+        const myMonths = months.with(2, "March");
+
+        document.getElementById("syntax17").innerHTML = myMonths;
+
+
+    </script>
+</body>
+
+</html>

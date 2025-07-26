@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text],
+select,
+textarea {
+    border: 1px soild black;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    resize: vertical;
+
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    color: black;
+    display: inline-block;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: rgb(162, 162, 245);
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    display: block;
+    /* float: right; */
+}
+
+input[type=submit]:hover {
+    background-color: rgb(66, 66, 247);
+}
+
+.ab {
+    margin-top: 6px;
+    /* float: left; */
+    width: 25%;
+}
+
+.kab {
+    margin-top: 6px;
+    /* float: left; */
+    width: 75%;
+}
+
+.main {
+    border-radius: 16px;
+    padding: 20px;
+    background-color: rgb(245, 148, 30);
+}
+
+.sub-main {
+    margin: 0px 6px 6px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* .sub main::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+@media screen and (max-width:600px) {
+    .sub-main {
+        flex-direction: column;
+    }
+}

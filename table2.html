@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        table {
+            background-color: aqua;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+
+        th {
+
+            border-bottom: 2px solid red;
+            vertical-align: left bottom;
+            padding: 20px;
+        }
+
+
+        tr:hover {
+            background-color: blueviolet;
+        }
+
+        .abhi {
+            position: relative;
+            background-color: black;
+            color: brown;
+            width: 500px;
+            height: 500px;
+        }
+
+        .gun {
+            position: absolute;
+            background-color: bisque;
+            color: rgba(255, 0, 30, 0.655);
+            width: 200px;
+            height: 200px;
+            top: 300px;
+            left: 300px;
+        }
+
+        .name {
+            position: fixed;
+            width: 20%;
+            bottom: 0px;
+            right: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>first name</th>
+            <th>middle name</th>
+            <th>last name</th>
+        </tr>
+        <tr>
+            <td>abhinaw</td>
+            <td>pratap</td>
+            <td>singh</td>
+        </tr>
+        <tr>
+            <td>vishwash</td>
+            <td>........</td>
+            <td>kumar</td>
+        </tr>
+        <tr>
+            <td>anuj</td>
+            <td>pratap</td>
+            <td>singh</td>
+        </tr>
+    </table>
+    <div class="abhi">
+        <h1>Abhinaw</h1>
+        <div>
+            <h6 class="gun">Pri</h6>
+        </div>
+    </div>
+
+    <div class="name">i am abhinaw pratap singh</div>
+
+</body>
+
+</html>
